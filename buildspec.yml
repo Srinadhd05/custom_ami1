@@ -17,8 +17,8 @@ phases:
       ### More info here: https://github.com/mitchellh/packer/issues/4279
       - echo "Configuring AWS credentials"
       - aws configure set region ap-south-1
-      - aws configure set aws_access_key_id AKIAYGJJFLLJFQV6RDM3
-      - aws configure set aws_secret_access_key 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
+      - aws configure set aws_access_key_id 
+      - aws configure set aws_secret_access_key 
       - echo "Building HashiCorp Packer template, amazon-linux_packer-template.json"
       - ./packer build amazon-linux_packer-template.json
   post_build:
